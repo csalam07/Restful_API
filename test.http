@@ -1,0 +1,60 @@
+GET http://localhost:5000/api/products
+
+
+################################
+POST http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "product_id": "4",
+    "title": "2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Gold",
+    "description": "This is a product",
+    "price": 20.90,
+    "stock" : 4,
+    "category": "eleelectronics",
+    "content": "This is a product",
+    "rating": 4.5,
+    "images": [
+        "https://images-na.ssl-images-amazon.com/images/I/31%2BG-o8iK-L.jpg",
+         "https://images-na.ssl-images-amazon.com/images/I/41HZgzxtMZL.jpg",
+         "https://images-na.ssl-images-amazon.com/images/I/41wztDY1p-L.jpg",
+         "https://images-na.ssl-images-amazon.com/images/I/2187LE6wzGL.jpg",
+         "https://images-na.ssl-images-amazon.com/images/I/21ltHjqsBEL.jpg"
+    ],
+    "sizes": ["XL", "M", "LM", "L"],
+    "company": "amazon",
+    "colors": ["red", "green", "yellow"]
+}
+
+
+#################################
+DELETE http://localhost:5000/api/products/60fc7685595aef029cbb828d
+
+
+#################################
+PUT http://localhost:5000/api/products/60fc76eebbaadd27641757c8
+Content-Type: application/json
+
+{
+    "product_id": "4",
+    "title": "2021 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Gold",
+    "description": "This is a product",
+    "price": 800.90,
+    "stock" : 40,
+    "category": "eleelectronics",
+    "content": "This is an iphone",
+    "rating": 4.5,
+    "images": [
+        "https://images-na.ssl-images-amazon.com/images/I/31%2BG-o8iK-L.jpg",
+         "https://images-na.ssl-images-amazon.com/images/I/41HZgzxtMZL.jpg",
+         "https://images-na.ssl-images-amazon.com/images/I/41wztDY1p-L.jpg",
+         "https://images-na.ssl-images-amazon.com/images/I/2187LE6wzGL.jpg",
+         "https://images-na.ssl-images-amazon.com/images/I/21ltHjqsBEL.jpg"
+    ],
+    "sizes": ["XL", "M", "LM", "L"],
+    "company": "amazon",
+    "colors": ["red", "green", "yellow"]
+}
+
+#################
+GET http://localhost:5000/api/products/id
